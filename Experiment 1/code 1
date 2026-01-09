@@ -1,0 +1,16 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+int main() {
+    string s;
+    getline(cin, s);
+    stringstream ss(s);
+    string w;
+    int c = 0;
+    while (ss >> w)
+        c++;
+    cout << c;
+    return 0;
+}
